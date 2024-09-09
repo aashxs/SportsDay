@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Event Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sports Event Simulation By ASHISH</h1>
+      <div id="event-log"></div>
+      <div id="scoreboard">
+        <h2>Scores:</h2>
+        <ul>
+          <li>Red: <span id="red-score">0</span> points</li>
+          <li>Green: <span id="green-score">0</span> points</li>
+          <li>Blue: <span id="blue-score">0</span> points</li>
+          <li>Yellow: <span id="yellow-score">0</span> points</li>
+        </ul>
+      </div>
+      <button id="start-button">Start Event</button>
+      <div id="high-jump-container" style="display: none">
+        <label for="high-jump-color"
+          >Select the color with the highest jump:</label
+        >
+        <select id="high-jump-color">
+          <option value="">--Choose a color--</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
+          <option value="Yellow">Yellow</option>
+        </select>
+        <button id="submit-color">Submit Color</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
